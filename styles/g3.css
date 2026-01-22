@@ -132,6 +132,22 @@ main > section {
     margin-top: 0px;  
     margin-bottom: 0px; 
 }
+#badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -150px;
+}
+#badge_year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured_architect img {
+    width: 100%;
+}
+
  /* some facts related style */
  .facts_container {
     display: grid;
@@ -183,6 +199,7 @@ main > section {
 {
     .navbar,
     .nav_link,
+    .features, 
     .teams {
         flex-direction: column;
     }
@@ -206,12 +223,16 @@ main > section {
     .our_features {
     margin-left: 20px;
     }
+    #badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 
 /* medium size device responsive */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams {
+    .teams, .features {
         flex-direction: column;
     }
     .our_features {
@@ -222,5 +243,10 @@ main > section {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+    
+    #badge {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
